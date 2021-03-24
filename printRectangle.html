@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <script>
     let height = Number(prompt("Nhap chieu cao:"))
@@ -16,21 +18,21 @@
     let countWidth = 0
     let countChar = 0
     let stringLine = ""
-    
-    while(countHeight < height) {
+
+    while (countHeight < height) {
       stringLine = ""
       countWidth = 0
       countChar = 0
 
-      while(countWidth < width) {
-        if(countChar == 0 || countChar == width - 1) {
+      while (countWidth < width) {
+        if (countChar == 0 || countChar == width - 1) {
           stringLine += letter
         } else {
-            if(countHeight == 0 || countHeight == height - 1) {
+          if (countHeight == 0 || countHeight == height - 1) {
             stringLine += letter
-            } else {
+          } else {
             stringLine += " "
-            }
+          }
         }
         countChar++
         countWidth++
@@ -40,4 +42,5 @@
     }
   </script>
 </body>
+
 </html>
